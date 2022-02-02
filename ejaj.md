@@ -1,1 +1,34 @@
-# jenkins
+//SCRIPTED
+
+//DECLARATIVE
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo "Build"  
+            }
+        }
+        stage ('Test') {
+            steps {
+                echo "Test"
+            }
+        }
+        stage('Interation Test') {
+            steps {
+                echo "Integration Test"
+            }
+        }
+    }
+post {
+        always {
+            echo 'Im awesome. I read always'
+        }
+        success {
+            echo 'I read when you are successful'
+        }
+        failure {
+           echo 'I read when you fail'
+        }
+    }
+}
