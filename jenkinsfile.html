@@ -20,4 +20,16 @@ pipeline {
             }
         }
     }
+post {
+        always {
+            echo 'Im awesome. I read always'
+        }
+        success {
+            echo 'I read when you are successful'
+        }
+        failure {
+           echo 'I read when you fail'
+        }
+    }
 }
+
