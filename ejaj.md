@@ -11,7 +11,7 @@ pipeline {
                 //sh 'mvn --version'
                 //sh 'node --version'
                 echo "Build"  
-                echo "PATH - $PATH 
+                echo "PATH - $PATH" 
                 "BUILD ID - $env.BUILD_ID"
                 "JOB NAME - $env.JOB_NAME"
                 echo "$env.BUILD_TAG"
