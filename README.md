@@ -14,7 +14,7 @@ pipeline {
                 echo "PATH -  $PATH"
                 echo "BUILD NUMBER - $env.BUILD_NUMBER"
                 "BUILD ID - $env.BUILD ID"
-                "JOB NAME - $env.JOB_NAME"
+                "JOB NAME - env.JOB_NAME "
                 echo "$env.BUILD_TAG"
                 echo "$env.BUILD_URL"
             }
